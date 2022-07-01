@@ -4,8 +4,6 @@ const fs = require('fs');
 const path = require('path');
 
 const filePath = path.join(__dirname, 'talker.json');
-const file = fs.readFileSync(filePath, 'utf8');
-const parsed = JSON.parse(file);
 
 const app = express();
 app.use(bodyParser.json());
@@ -23,10 +21,14 @@ app.listen(PORT, () => {
 });
 
 app.get('/talker', (req, res) => {
+  const file = fs.readFileSync(filePath, 'utf8');
+  const parsed = JSON.parse(file);
   res.status(200).json(parsed);
 });
 
 app.get('/talker/:id', (req, res) => {
+  const file = fs.readFileSync(filePath, 'utf8');
+  const parsed = JSON.parse(file);
   const { id } = req.params;
   const item = parsed.find((r) => r.id === Number(id));
 
