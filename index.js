@@ -29,6 +29,41 @@ const tokenGenerator = () => {
   return result;
 };
 
+const validateEmail = (req, res, next) => {
+  const regexEmail = /\S+@\S+\.\S+/;
+  const { email } = req.body;
+
+  if (!email) {
+    return res.status(400).json({
+      message: 'O campo "email" é obrigatório',
+    });
+  }
+  if (!regexEmail.test(email)) {
+    return res.status(400).json({
+      message: 'O "email" deve ter o formato "email@email.com"',
+    });
+  }
+
+  next();
+};
+
+const validatePassword = (req, res, next) => {
+  const { password } = req.body;
+
+  if (!password) {
+    return res.status(400).json({
+      message: 'O campo "password" é obrigatório',
+    });
+  }
+  if (password.length < 6) {
+    return res.status(400).json({
+      message: 'O "password" deve ter pelo menos 6 caracteres',
+    });
+  }
+
+  next();
+};
+
 app.get('/talker', (req, res) => {
   const file = fs.readFileSync(filePath, 'utf8');
   const parsed = JSON.parse(file);
@@ -46,7 +81,10 @@ app.get('/talker/:id', (req, res) => {
   res.status(200).json(item);
 });
 
-app.post('/login', (req, res) => {
+app.post('/login',
+  validateEmail,
+  validatePassword,
+  (req, res) => {
   const token = tokenGenerator();
   res.status(200).json({ token });
 });
