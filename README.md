@@ -1,35 +1,14 @@
 <h1 align="center">Talker Mamager</h1>
 
 ## :memo: Descrição
-Escreva uma descrição do seu projeto
+APlicação de cadastro de talkers (palestrantres) em que será possível visualizar, cadastrar, pesquisar, editar e excluir informações
 
 ## :books: Funcionalidades
-* <b>Funcionalidade 1</b>: O que essa funcionalidade faz?
+* <b>API de `CRUD`</b>: Cread, Read, Update e Delete.
+* <b>Endpoints</b>: Ler e escrever em um arquivo utilizando o módulo `fs`.
 
 ## :wrench: Tecnologias utilizadas
-* Tecnologia;
+* Node.js <img alt="NODE.JS" height="42px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+* Express<img alt="express" height ="42px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
 
-## :rocket: Rodando o projeto
-Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando para iniciar o projeto:
-```
-<linha de comando>
-```
-
-## :soon: Implementação futura
-* O que será implementado na próxima sprint?
-
-## :handshake: Colaboradores
-<table>
-  <tr>
-    <td align="center">
-      <a href="http://github.com/tatialveso">
-        <img src="https://avatars.githubusercontent.com/u/56259137?v=4" width="100px;" alt="Foto de Tati Alves no GitHub"/><br>
-        <sub>
-          <b>tatialveso</b>
-        </sub>
-      </a>
-    </td>
-  </tr>
-</table>
-
-## :dart: Status do projeto
+## :dart: Status do projeto: COMPLETO
