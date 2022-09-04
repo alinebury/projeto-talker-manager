@@ -1,4 +1,4 @@
-<h1 align="center">Talker Mamager</h1>
+<h1 align="center">Talker Manager</h1>
 
 ## :memo: Descrição
 Aplicação de cadastro de talkers (palestrantres) em que será possível visualizar, cadastrar, pesquisar, editar e excluir informações
