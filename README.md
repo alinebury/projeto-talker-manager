@@ -9,6 +9,7 @@ Aplicação de cadastro de talkers (palestrantres) em que será possível visual
 
 ## :wrench: Tecnologias utilizadas
 * Node.js <img alt="NODE.JS" height="42px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-* Express<img alt="express" height ="42px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
+* Express <img alt="express" height ="42px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
+* MySQL <img alt="SQL" height="42px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" /> 
 
 ## :dart: Status do projeto: COMPLETO
