@@ -1,7 +1,7 @@
 <h1 align="center">Talker Mamager</h1>
 
 ## :memo: Descrição
-APlicação de cadastro de talkers (palestrantres) em que será possível visualizar, cadastrar, pesquisar, editar e excluir informações
+Aplicação de cadastro de talkers (palestrantres) em que será possível visualizar, cadastrar, pesquisar, editar e excluir informações
 
 ## :books: Funcionalidades
 * <b>API de `CRUD`</b>: Cread, Read, Update e Delete.
